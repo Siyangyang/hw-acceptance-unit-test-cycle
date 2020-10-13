@@ -1,0 +1,250 @@
+{
+  "RSpec": {
+    "coverage": {
+      "/home/ubuntu/csce606/hw-acceptance-unit-test-cycle/rottenpotatoes/app/helpers/application_helper.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/home/ubuntu/csce606/hw-acceptance-unit-test-cycle/rottenpotatoes/app/helpers/movies_helper.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          0,
+          null,
+          null
+        ]
+      },
+      "/home/ubuntu/csce606/hw-acceptance-unit-test-cycle/rottenpotatoes/app/controllers/movies_controller.rb": {
+        "lines": [
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          null,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/home/ubuntu/csce606/hw-acceptance-unit-test-cycle/rottenpotatoes/app/controllers/application_controller.rb": {
+        "lines": [
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/home/ubuntu/csce606/hw-acceptance-unit-test-cycle/rottenpotatoes/app/models/movie.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          0,
+          null,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      }
+    },
+    "timestamp": 1602539103
+  },
+  "Cucumber Features": {
+    "coverage": {
+      "/home/ubuntu/csce606/hw-acceptance-unit-test-cycle/rottenpotatoes/app/models/movie.rb": {
+        "lines": [
+          1,
+          1,
+          22,
+          null,
+          null,
+          null,
+          1,
+          2,
+          2,
+          1,
+          null,
+          null
+        ]
+      },
+      "/home/ubuntu/csce606/hw-acceptance-unit-test-cycle/rottenpotatoes/app/controllers/movies_controller.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          2,
+          null,
+          null,
+          1,
+          4,
+          4,
+          null,
+          null,
+          null,
+          1,
+          22,
+          22,
+          null,
+          4,
+          null,
+          4,
+          null,
+          22,
+          22,
+          null,
+          22,
+          60,
+          null,
+          null,
+          22,
+          6,
+          6,
+          6,
+          null,
+          16,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          2,
+          2,
+          1,
+          1,
+          null,
+          2,
+          null,
+          null,
+          null
+        ]
+      },
+      "/home/ubuntu/csce606/hw-acceptance-unit-test-cycle/rottenpotatoes/app/controllers/application_controller.rb": {
+        "lines": [
+          1,
+          1,
+          null
+        ]
+      },
+      "/home/ubuntu/csce606/hw-acceptance-unit-test-cycle/rottenpotatoes/app/helpers/application_helper.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/home/ubuntu/csce606/hw-acceptance-unit-test-cycle/rottenpotatoes/app/helpers/movies_helper.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          0,
+          null,
+          null
+        ]
+      }
+    },
+    "timestamp": 1602629695
+  }
+}
