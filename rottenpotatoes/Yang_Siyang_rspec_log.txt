@@ -1,0 +1,45 @@
+FF....
+
+Failures:
+
+  1) MoviesController.similar found similar movies
+     Failure/Error: get :similar, movie_id: movie.id
+
+     ActionController::UrlGenerationError:
+       No route matches {:action=>"similar", :controller=>"movies", :movie_id=>"1"}
+     # /home/ubuntu/.rvm/gems/ruby-2.4.6/gems/actionpack-4.2.10/lib/action_dispatch/journey/formatter.rb:46:in `generate'
+     # /home/ubuntu/.rvm/gems/ruby-2.4.6/gems/actionpack-4.2.10/lib/action_dispatch/routing/route_set.rb:721:in `generate'
+     # /home/ubuntu/.rvm/gems/ruby-2.4.6/gems/actionpack-4.2.10/lib/action_dispatch/routing/route_set.rb:752:in `generate'
+     # /home/ubuntu/.rvm/gems/ruby-2.4.6/gems/actionpack-4.2.10/lib/action_dispatch/routing/route_set.rb:747:in `generate_extras'
+     # /home/ubuntu/.rvm/gems/ruby-2.4.6/gems/actionpack-4.2.10/lib/action_dispatch/routing/route_set.rb:742:in `extra_keys'
+     # /home/ubuntu/.rvm/gems/ruby-2.4.6/gems/actionpack-4.2.10/lib/action_controller/test_case.rb:210:in `assign_parameters'
+     # /home/ubuntu/.rvm/gems/ruby-2.4.6/gems/actionpack-4.2.10/lib/action_controller/test_case.rb:626:in `process'
+     # /home/ubuntu/.rvm/gems/ruby-2.4.6/gems/actionpack-4.2.10/lib/action_controller/test_case.rb:67:in `process'
+     # /home/ubuntu/.rvm/gems/ruby-2.4.6/gems/actionpack-4.2.10/lib/action_controller/test_case.rb:514:in `get'
+     # ./spec/controllers/movies_controller_spec.rb:14:in `block (3 levels) in <top (required)>'
+
+  2) MoviesController.similar not found movies
+     Failure/Error: get :similar, movie_id: movie.id
+
+     ActionController::UrlGenerationError:
+       No route matches {:action=>"similar", :controller=>"movies", :movie_id=>"3"}
+     # /home/ubuntu/.rvm/gems/ruby-2.4.6/gems/actionpack-4.2.10/lib/action_dispatch/journey/formatter.rb:46:in `generate'
+     # /home/ubuntu/.rvm/gems/ruby-2.4.6/gems/actionpack-4.2.10/lib/action_dispatch/routing/route_set.rb:721:in `generate'
+     # /home/ubuntu/.rvm/gems/ruby-2.4.6/gems/actionpack-4.2.10/lib/action_dispatch/routing/route_set.rb:752:in `generate'
+     # /home/ubuntu/.rvm/gems/ruby-2.4.6/gems/actionpack-4.2.10/lib/action_dispatch/routing/route_set.rb:747:in `generate_extras'
+     # /home/ubuntu/.rvm/gems/ruby-2.4.6/gems/actionpack-4.2.10/lib/action_dispatch/routing/route_set.rb:742:in `extra_keys'
+     # /home/ubuntu/.rvm/gems/ruby-2.4.6/gems/actionpack-4.2.10/lib/action_controller/test_case.rb:210:in `assign_parameters'
+     # /home/ubuntu/.rvm/gems/ruby-2.4.6/gems/actionpack-4.2.10/lib/action_controller/test_case.rb:626:in `process'
+     # /home/ubuntu/.rvm/gems/ruby-2.4.6/gems/actionpack-4.2.10/lib/action_controller/test_case.rb:67:in `process'
+     # /home/ubuntu/.rvm/gems/ruby-2.4.6/gems/actionpack-4.2.10/lib/action_controller/test_case.rb:514:in `get'
+     # ./spec/controllers/movies_controller_spec.rb:25:in `block (3 levels) in <top (required)>'
+
+Finished in 0.05899 seconds (files took 1.63 seconds to load)
+6 examples, 2 failures
+
+Failed examples:
+
+rspec ./spec/controllers/movies_controller_spec.rb:7 # MoviesController.similar found similar movies
+rspec ./spec/controllers/movies_controller_spec.rb:18 # MoviesController.similar not found movies
+
+Coverage report generated for RSpec to /home/ubuntu/csce606/hw-acceptance-unit-test-cycle/rottenpotatoes/coverage. 40 / 56 LOC (71.43%) covered.
