@@ -74,3 +74,72 @@ Processing by MoviesController#index as HTML
   [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'NC-17', 'PG', 'PG-13', 'R')
   Rendered movies/index.html.haml within layouts/application (2.2ms)
 Completed 200 OK in 10ms (Views: 9.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 24.205.16.9 at 2020-10-14 04:30:42 +0000
+
+
+Started GET "/movies" for 24.205.16.9 at 2020-10-14 04:30:42 +0000
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.1ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'PG', 'PG-13', 'NC-17', 'R')[0m
+  Rendered movies/index.html.haml within layouts/application (12.4ms)
+Completed 200 OK in 403ms (Views: 375.9ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 24.205.16.9 at 2020-10-14 04:30:42 +0000
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 24.205.16.9 at 2020-10-14 04:30:43 +0000
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 24.205.16.9 at 2020-10-14 04:30:43 +0000
+
+
+Started GET "/assets/application.self-ac4347b135ab8935f2dd20089f2acc8bec1d6b2ad528a80fcb03cd445dbd4d27.js?body=1" for 24.205.16.9 at 2020-10-14 04:30:43 +0000
+
+
+Started GET "/movies/new" for 24.205.16.9 at 2020-10-14 04:30:48 +0000
+Processing by MoviesController#new as HTML
+  Rendered movies/new.html.haml within layouts/application (8.7ms)
+Completed 200 OK in 16ms (Views: 16.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/movies" for 24.205.16.9 at 2020-10-14 04:30:53 +0000
+Processing by MoviesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6/MHiirNMYNWSI9gIsw1NTEiDss/8Bz2PpJNz6/WCqeP6FlpbzxycJkn1OrWjFBMcwVjuhx8OXbvPp+iChptVw==", "movie"=>{"title"=>"test1", "rating"=>"G", "release_date(1i)"=>"2020", "release_date(2i)"=>"10", "release_date(3i)"=>"14"}, "commit"=>"Save Changes"}
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (1.4ms)[0m  [1mINSERT INTO "movies" ("title", "rating", "release_date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "test1"], ["rating", "G"], ["release_date", "2020-10-14 00:00:00.000000"], ["created_at", "2020-10-14 04:30:53.515564"], ["updated_at", "2020-10-14 04:30:53.515564"]]
+  [1m[35m (7.6ms)[0m  commit transaction
+Redirected to https://5834d4b3d7524a9a82b1bb9f4935106a.vfs.cloud9.us-east-1.amazonaws.com/movies
+Completed 302 Found in 19ms (ActiveRecord: 9.1ms)
+
+
+Started GET "/movies" for 24.205.16.9 at 2020-10-14 04:30:53 +0000
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'PG', 'PG-13', 'NC-17', 'R')[0m
+  Rendered movies/index.html.haml within layouts/application (2.9ms)
+Completed 200 OK in 11ms (Views: 9.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/movies/1" for 24.205.16.9 at 2020-10-14 04:30:56 +0000
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mMovie Load (0.2ms)[0m  SELECT  "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered movies/show.html.haml within layouts/application (3.0ms)
+Completed 200 OK in 13ms (Views: 10.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/similar_movies/test1" for 24.205.16.9 at 2020-10-14 04:33:57 +0000
+Processing by MoviesController#search as HTML
+  Parameters: {"title"=>"test1"}
+  [1m[36mMovie Load (0.3ms)[0m  [1mSELECT  "movies".* FROM "movies" WHERE "movies"."title" = ? LIMIT 1[0m  [["title", "test1"]]
+Redirected to https://5834d4b3d7524a9a82b1bb9f4935106a.vfs.cloud9.us-east-1.amazonaws.com/movies
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "movies".* FROM "movies" WHERE "movies"."title" = ? LIMIT 1  [["title", "test1"]]
+Completed 302 Found in 4ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/movies" for 24.205.16.9 at 2020-10-14 04:33:57 +0000
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'PG', 'PG-13', 'NC-17', 'R')[0m
+  Rendered movies/index.html.haml within layouts/application (2.4ms)
+Completed 200 OK in 10ms (Views: 9.4ms | ActiveRecord: 0.2ms)
